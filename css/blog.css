@@ -3,4 +3,6 @@
     border: 1px solid red;
     margin: 10px;
     padding: 1%;
+    justify-content: left;
+    text-align: left;
 }

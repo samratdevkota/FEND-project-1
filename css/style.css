@@ -1,4 +1,19 @@
 @import "blog.css";
+@import "footer.css";
+@import "normalize.css";
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+    background: url(../images/nepal.jpg);
+    background-size: cover;
+    line-height: 1.5;
+    text-align: center;
+    overflow: hidden;
+	padding-top: 60px;
+}
 
 .container{
    display:grid;
@@ -24,10 +39,41 @@ img {
     height: auto;
 }
 
-@media (min-width:600px){
+.card {
+	margin: 30px;
+	padding: 20px 40px 40px;
+	max-width: 500px;
+	text-align: left;
+	background: #fff;
+	border-bottom: 4px solid #ccc;
+	border-radius: 6px;
+	transition: all .5s;
+}
+.card:hover {
+    border-color: #ff99ff;
+}
+
+
+@media (min-width:720px){
 .container{
     display: grid;
     grid-template-rows: 200px 200px 200px;
     grid-template-columns: 30vw 30vw;
+    justify-content: space-around;
 }
+header{
+    min-height: 300px;
+}
+
+footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.resize {
+    width: 400px;
+    height: auto;
+}
+
 }

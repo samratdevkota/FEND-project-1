@@ -18,6 +18,31 @@ body {
 	background: #f7f5f0;
 }
 
+/* Link Styles */
+
+a {
+	text-decoration: none;
+	color: #999;
+}
+a:hover {
+	color: #6633ff;
+}
+
+button {
+    background: black;
+    color: blanchedalmond;
+	min-height: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+button {
+	transition: all .5s;
+}
+button:hover {
+	color: pink;
+}
+
 header {
     background: url(../images/nepal.jpg);
     background-size: cover;
@@ -29,22 +54,11 @@ header {
 
 .container{
    display:grid;
-   grid-template-rows: 200px 200px 200px;
-   border: 1px solid greenyellow;
+   grid-template-rows: auto;
    margin: 10px;
-   justify-content: center;
+   justify-content: space-around;
 }
 
-.box {
-    display:flex;
-    display: block;
-    flex-flow: wrap;
-    border: 1px solid gray;
-    margin: 10px;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
 
 img {
     width: 50%;
@@ -62,17 +76,20 @@ img {
 	transition: all .5s;
 }
 .card:hover {
-    border-color: #ff99ff;
+    border-color:greenyellow;
 }
 
 
 @media (min-width:720px){
-.container{
-    display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 30vw 30vw;
-    justify-content: space-around;
+.container {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    max-width: 1200px;
+    justify-content: center;
 }
+
 header{
     min-height: 300px;
 }
@@ -81,11 +98,6 @@ footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
-}
-
-.resize {
-    width: 400px;
-    height: auto;
 }
 
 }

@@ -1,8 +1,8 @@
 .blog-container {
-    display: grid;
-    border: 1px solid red;
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
     padding: 1%;
-    justify-content: left;
+    justify-content: center;
     text-align: left;
 }
